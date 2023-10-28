@@ -1,0 +1,8 @@
+{
+  "name": "feedbackform",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:Pavelvl21/feedbackForm.git",
+  "author": "Pavel Yudenka <p.yudenko@gmail.com>",
+  "license": "MIT"
+}
