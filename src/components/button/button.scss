@@ -1,0 +1,31 @@
+$color-primary: #0077cc;
+$color-secondary: #0070bf;
+$color-active: #015896;
+$color-disabled: #989898;
+$color-text: #fafafa;
+
+.button {
+  height: 2.3rem;
+  width: 6rem;
+  justify-self: center;
+  border: none;
+  color: $color-text;
+  border-radius: 3px;
+  background-color: $color-primary;
+
+  &:active {
+    background-color: $color-active;
+  }
+
+  &:hover:not(:disabled) {
+    cursor: pointer;
+
+    &:not(:active) {
+      background-color: $color-secondary;
+    }
+  }
+
+  &:disabled {
+    background-color: $color-disabled;
+  }
+}
