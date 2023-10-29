@@ -1,4 +1,5 @@
 import { feedbackForm } from './components/feedbackForm/feedbackForm';
+import { modalButton } from './components/modalButton/modalButton';
 
 export const app = () => {
   const main = document.createElement('main');
@@ -8,7 +9,9 @@ export const app = () => {
   };
 
   const form = feedbackForm(state);
-  main.append(form);
+  const button = modalButton();
+
+  main.append(form, button);
 
   document.body.append(main);
 };
