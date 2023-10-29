@@ -7,14 +7,14 @@ const port = 9090;
 
 app.use(cors());
 
-app.post("/api/registration", (req, res) => {
+app.post('/api/registration', (req, res) => {
   if (Math.random() > 0.5) {
     res.statusCode = 400;
 
     setTimeout(() => {
       res.send({
-        status: "error",
-        message: "Bad request",
+        status: 'error',
+        message: 'Bad request',
       });
     }, Math.random() * 1000);
 
@@ -24,17 +24,17 @@ app.post("/api/registration", (req, res) => {
   setTimeout(() => {
     res.statusCode = 200;
     res.send({
-      status: "success",
-      message: "You are registered",
+      status: 'success',
+      message: 'You are registered',
     });
   }, Math.random() * 1000);
 });
 
-app.get("/api/ping", (req, res) => {
+app.get('/api/ping', (req, res) => {
   res.statusCode = 200;
   res.send({
-    status: "success",
-    message: "Server is ready",
+    status: 'success',
+    message: 'Server is ready',
   });
 });
 
