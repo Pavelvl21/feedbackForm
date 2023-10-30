@@ -1,0 +1,34 @@
+$color-success: #198754;
+$color-warning: #dc3535;
+$color-primary: #fafafa;
+
+.alert {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12rem;
+  height: 3rem;
+  top: 2rem;
+  right: 2rem;
+  border-radius: 3px;
+  color: $color-primary;
+
+  &.hidden {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  &.visible {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  &-success {
+    background-color: $color-success;
+  }
+
+  &-error {
+    background-color: $color-warning;
+  }
+}
